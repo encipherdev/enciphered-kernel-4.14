@@ -3505,4 +3505,6 @@ static inline int inode_drain_writes(struct inode *inode)
 	return filemap_write_and_wait(inode->i_mapping);
 }
 
+int path_umount(struct path *path, int flags);
+
 #endif /* _LINUX_FS_H */

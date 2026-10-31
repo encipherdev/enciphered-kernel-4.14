@@ -13,6 +13,7 @@
 
 #include <drm/drmP.h>
 #include <drm/drm_atomic_helper.h>
+#include <drm/drm_color_mgmt.h>
 #include <drm/drm_crtc_helper.h>
 #include <drm/drm_fourcc.h>
 #include <drm/drm_plane_helper.h>
@@ -194,6 +195,7 @@ static int sprd_dummy_crtc_init(struct drm_device *drm, struct drm_crtc *crtc,
 	}
 
 	drm_crtc_helper_add(crtc, &sprd_dummy_crtc_helper_funcs);
+	drm_crtc_enable_color_mgmt(crtc, 0, true, 0);
 
 	return 0;
 }

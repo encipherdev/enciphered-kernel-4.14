@@ -15,6 +15,7 @@
 #include <drm/drm_crtc_helper.h>
 #include <drm/drm_plane_helper.h>
 #include <drm/drm_gem_framebuffer_helper.h>
+#include <drm/drm_color_mgmt.h>
 #include <linux/component.h>
 #include <linux/dma-buf.h>
 #include <linux/of.h>
@@ -915,6 +916,7 @@ static int sprd_crtc_init(struct drm_device *drm, struct drm_crtc *crtc,
 	}
 
 	drm_mode_crtc_set_gamma_size(crtc, 256);
+	drm_crtc_enable_color_mgmt(crtc, 0, true, 256);
 
 	drm_crtc_helper_add(crtc, &sprd_crtc_helper_funcs);
 

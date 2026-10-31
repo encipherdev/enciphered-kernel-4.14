@@ -156,6 +156,23 @@ static int sprd_dummy_connector_init(struct drm_device *drm,
 	drm_connector_helper_add(connector,
 				 &dummy_connector_helper_funcs);
 
+	drm_connector_attach_edid_property(connector);
+
+	{
+		static const u8 dummy_edid[128] = { 0 };
+		struct drm_property_blob *blob;
+		struct drm_property *edid_prop;
+
+		blob = drm_property_create_blob(drm, sizeof(dummy_edid), dummy_edid);
+		if (!IS_ERR(blob)) {
+			edid_prop = drm_property_create(drm,
+				DRM_MODE_PROP_IMMUTABLE | DRM_MODE_PROP_BLOB,
+				"EDID INFO", 0);
+			if (edid_prop)
+				drm_object_attach_property(&connector->base, edid_prop, blob->base.id);
+		}
+	}
+
 	drm_mode_connector_attach_encoder(connector, encoder);
 
 	return 0;
