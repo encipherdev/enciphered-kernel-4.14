@@ -71,8 +71,10 @@ Install **SukiSU Ultra Manager APK** from the [v1.1 Release Page](https://github
 - **XDA Thread:** [XDA Developers Forum](https://xdaforums.com/t/kernel-sm-x200-sm-x205-enciphered-kernel-v1-1-resukisu-v4-1-0-susfs-v2-1-0-wireguard-bbr-nethunter.4807120/)
 - **Kernel Source:** [encipherdev/enciphered-kernel-4.14](https://github.com/encipherdev/enciphered-kernel-4.14)
 - **Maintainer:** [encipherdev](https://github.com/encipherdev)
-- **Upstream Credits:**
-  - [ReSukiSU Team](https://github.com/ReSukiSU/ReSukiSU)
-  - [simonpunk](https://gitlab.com/simonpunk/susfs4ksu) (SuSFS)
-  - [osm0sis](https://github.com/osm0sis/AnyKernel3) (AnyKernel3)
-  - [DevCat3](https://github.com/DevCat3) (Samsung Tab A8 base tree)
+
+### Special Thanks & Acknowledgements
+- **[DevCat3](https://github.com/DevCat3)** - Huge thanks for the Tab A8 base kernel tree and the initial ReSukiSU integration that made this project possible!
+- **[ReSukiSU Team](https://github.com/ReSukiSU/ReSukiSU)** - For the exceptional ReSukiSU root driver
+- **[simonpunk](https://gitlab.com/simonpunk/susfs4ksu)** - SuSFS kernel-level root hiding
+- **[osm0sis](https://github.com/osm0sis/AnyKernel3)** - AnyKernel3 flasher
+- **Samsung OSRC** - Stock kernel source code
