@@ -1,6 +1,7 @@
 # Enciphered Kernel v1.1 for Samsung Galaxy Tab A8 10.5 (2021)
 
 [![GitHub Release](https://img.shields.io/github/v/release/encipherdev/enciphered-kernel-4.14?color=blue&logo=github)](https://github.com/encipherdev/enciphered-kernel-4.14/releases/tag/v1.1)
+[![XDA Thread](https://img.shields.io/badge/XDA-Thread-orange?logo=xda-developers)](https://xdaforums.com/t/kernel-sm-x200-sm-x205-enciphered-kernel-v1-1-resukisu-v4-1-0-susfs-v2-1-0-wireguard-bbr-nethunter.4807120/)
 [![Linux Kernel](https://img.shields.io/badge/Linux-4.14.199-green.svg?logo=linux)](https://kernel.org)
 [![KernelSU](https://img.shields.io/badge/ReSukiSU-v4.1.0-brightgreen.svg)](https://github.com/ReSukiSU/ReSukiSU)
 [![SuSFS](https://img.shields.io/badge/SuSFS-v2.1.0-red.svg)](https://gitlab.com/simonpunk/susfs4ksu)
@@ -67,6 +68,7 @@ Install **SukiSU Ultra Manager APK** from the [v1.1 Release Page](https://github
 
 ## Source & Credits
 
+- **XDA Thread:** [XDA Developers Forum](https://xdaforums.com/t/kernel-sm-x200-sm-x205-enciphered-kernel-v1-1-resukisu-v4-1-0-susfs-v2-1-0-wireguard-bbr-nethunter.4807120/)
 - **Kernel Source:** [encipherdev/enciphered-kernel-4.14](https://github.com/encipherdev/enciphered-kernel-4.14)
 - **Maintainer:** [encipherdev](https://github.com/encipherdev)
 - **Upstream Credits:**
